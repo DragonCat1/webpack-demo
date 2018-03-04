@@ -1,0 +1,13 @@
+.root {
+  background-color: #eee;
+  padding: 10px;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.18);
+  /*animation: do 0.5s infinite linear alternate;*/
+
+}
+@keyframes do{
+  from{transform:translate3d(0,200px,0)rotate(-90deg);}
+  to{transform:translate3d(0,200px,0)rotate(90deg);}
+}
