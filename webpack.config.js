@@ -12,11 +12,11 @@ module.exports = {
 	},
 	devServer: {
 		host: "0.0.0.0",
-		port:80,
-    	contentBase: "./public",
-    	historyApiFallback: true,
-    	inline: true,
-    	hot: true
+		port:8000,
+		contentBase: "./public",
+		historyApiFallback: true,
+		inline: true,
+		hot: true
 	},
 	module:{
 		rules:[
@@ -63,7 +63,7 @@ module.exports = {
 	plugins:[
 		new webpack.BannerPlugin("Copyright Lhg inc."),
 		new HtmlWebpackPlugin({
-			template: __dirname + "/app/index.tmpl.html"//new 一个这个插件的实例，并传入相关的参数
+			template: __dirname + "/app/index.html"//new 一个这个插件的实例，并传入相关的参数
 		}),
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.optimize.OccurrenceOrderPlugin(),
